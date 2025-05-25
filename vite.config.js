@@ -11,5 +11,14 @@ export default defineConfig({
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    hmr: {
+      clientPort: 443,
+      host: 'work-1-hrztkpuujuslmghy.prod-runtime.all-hands.dev',
+    },
+    allowedHosts: ['work-1-hrztkpuujuslmghy.prod-runtime.all-hands.dev'],
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 12000,
   },
 })
